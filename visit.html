@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit — Sea Fruits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV START -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Sea Fruits</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="visit.html" class="nav-link active">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- HEADER / NAV END -->
+
+  <main>
+
+    <!-- VISIT PAGE HERO START -->
+    <section class="page-hero visit-page-hero" aria-label="Visit hero">
+      <canvas id="visit-hero-canvas"></canvas>
+      <div class="page-hero-content">
+        <p class="section-eyebrow">Find Us · Reserve · Arrive</p>
+        <h1>Plan Your Visit</h1>
+        <p>Dinner at Sea Fruits is a full evening. Come unhurried, come curious, come hungry.</p>
+      </div>
+    </section>
+    <!-- VISIT PAGE HERO END -->
+
+    <!-- VISIT INFO SECTION START -->
+    <section class="visit-info" aria-label="Visit information">
+
+      <div class="visit-grid">
+
+        <!-- HOURS CARD START -->
+        <article class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">◷</div>
+          <h2>Hours</h2>
+          <dl class="hours-list">
+            <div class="hours-row">
+              <dt>Monday – Tuesday</dt>
+              <dd>Closed</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Wednesday – Thursday</dt>
+              <dd>5 pm – 10 pm</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Friday</dt>
+              <dd>5 pm – 11 pm</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Saturday</dt>
+              <dd>4 pm – 11 pm</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Sunday</dt>
+              <dd>4 pm – 9 pm</dd>
+            </div>
+          </dl>
+        </article>
+        <!-- HOURS CARD END -->
+
+        <!-- LOCATION CARD START -->
+        <article class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">◈</div>
+          <h2>Location</h2>
+          <address>
+            <p>12 Tidal Orchard Lane</p>
+            <p>Coastal Bay, CB1 4SF</p>
+          </address>
+          <p class="visit-directions">We sit at the edge of the old harbour, between the fishmonger's row and the last orchard in the bay. Look for the amber lantern above the door.</p>
+          <p class="visit-parking"><strong>Parking:</strong> Free street parking after 6 pm. The Harbour Car Park is a 4-minute walk on Quay Street.</p>
+        </article>
+        <!-- LOCATION CARD END -->
+
+        <!-- RESERVATIONS CARD START -->
+        <article class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">✦</div>
+          <h2>Reservations</h2>
+          <p>We strongly recommend booking in advance — tables for prime Saturday service are often reserved three weeks ahead. Walk-ins are welcomed at the bar on a first-come basis.</p>
+          <p><strong>Email:</strong> <a href="mailto:reservations@seafruits.com">reservations@seafruits.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+441234567890">+44 1234 567 890</a></p>
+          <p class="visit-note">Please note any dietary requirements or allergies at the time of booking. We do our best to accommodate all guests in our world of impossible ingredients.</p>
+        </article>
+        <!-- RESERVATIONS CARD END -->
+
+      </div>
+
+    </section>
+    <!-- VISIT INFO SECTION END -->
+
+    <!-- RESERVATION FORM SECTION START -->
+    <section class="reservation-form-section" aria-labelledby="form-heading">
+      <div class="form-wrapper">
+        <div class="form-intro">
+          <p class="section-eyebrow">Book a Table</p>
+          <h2 id="form-heading">Make a Reservation</h2>
+          <p>Fill in your details and we will confirm your table within 24 hours. For groups of eight or more, please call us directly.</p>
+        </div>
+        <form class="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full Name</label>
+              <input type="text" id="res-name" name="name" autocomplete="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email Address</label>
+              <input type="email" id="res-email" name="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Preferred Date</label>
+              <input type="date" id="res-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="res-time">Preferred Time</label>
+              <select id="res-time" name="time" required>
+                <option value="" disabled selected>Select a time</option>
+                <option value="17:00">5:00 pm</option>
+                <option value="17:30">5:30 pm</option>
+                <option value="18:00">6:00 pm</option>
+                <option value="18:30">6:30 pm</option>
+                <option value="19:00">7:00 pm</option>
+                <option value="19:30">7:30 pm</option>
+                <option value="20:00">8:00 pm</option>
+                <option value="20:30">8:30 pm</option>
+                <option value="21:00">9:00 pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-guests">Number of Guests</label>
+              <select id="res-guests" name="guests" required>
+                <option value="" disabled selected>Select</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-phone">Phone (optional)</label>
+              <input type="tel" id="res-phone" name="phone" autocomplete="tel" placeholder="+44 XXXX XXXXXX" />
+            </div>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="res-notes">Special Requests or Allergies</label>
+            <textarea id="res-notes" name="notes" rows="4" placeholder="Dietary requirements, celebrations, accessibility needs…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">Request Reservation</button>
+        </form>
+      </div>
+    </section>
+    <!-- RESERVATION FORM SECTION END -->
+
+    <!-- VISIT AMBIANCE SECTION START -->
+    <section class="visit-ambiance" aria-label="Ambiance">
+      <div class="ambiance-inner">
+        <div class="ambiance-text">
+          <p class="section-eyebrow">The Space</p>
+          <h2>A Room That Smells of Salt and Blossom</h2>
+          <p>The dining room at Sea Fruits seats thirty-two, across bare oak tables lit by beeswax candles in repurposed Lobstrawberry shells. The walls are lined with tide-washed driftwood and botanical prints sourced from a Victorian natural history archive — each one depicting a creature scientists could never quite explain.</p>
+          <p>We do not play music at volume. What you hear is the restaurant itself: the rhythm of the kitchen, the sea wind from the harbour, and the quiet pleasure of good conversation over impossible food.</p>
+        </div>
+        <div class="ambiance-visual" aria-hidden="true">
+          <!-- Replace with real dining room photo: assets/img/dining-room.jpg -->
+          <div class="ambiance-placeholder"></div>
+        </div>
+      </div>
+    </section>
+    <!-- VISIT AMBIANCE SECTION END -->
+
+  </main>
+
+  <!-- FOOTER START -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Sea Fruits</p>
+        <p class="footer-tagline-small">Where Ocean Meets Orchard</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="visit.html">Visit</a>
+      </nav>
+      <div class="footer-contact">
+        <p>12 Tidal Orchard Lane, Coastal Bay</p>
+        <p>reservations@seafruits.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Sea Fruits. All rights reserved.</p>
+      <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

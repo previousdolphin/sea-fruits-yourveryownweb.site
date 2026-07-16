@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Fruits — Where Ocean Meets Orchard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV START -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Sea Fruits</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="visit.html" class="nav-link">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- HEADER / NAV END -->
+
+  <main>
+
+    <!-- HERO SECTION START -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-canvas-wrapper">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Est. 2024 · Fine Dining</p>
+        <h1 class="hero-title">Sea<br/><em>Fruits</em></h1>
+        <p class="hero-tagline">Where the ocean grows on vines — a cuisine born from the impossible marriage of sea and orchard.</p>
+        <p class="hero-hours">Open Wed – Sun &nbsp;·&nbsp; 5 pm – 11 pm</p>
+        <div class="hero-cta">
+          <a href="menu.html" class="btn btn-primary">Explore the Menu</a>
+          <a href="visit.html" class="btn btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll to discover</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+
+    <!-- CREATURES SECTION START -->
+    <section class="creatures" aria-label="Signature creatures">
+      <div class="section-header centered">
+        <p class="section-eyebrow">Our Living Ingredients</p>
+        <h2>The Hybrids</h2>
+        <p class="section-intro">Every dish begins with a creature that should not exist — and yet, here they are. Rotate each specimen to inspect the impossible.</p>
+      </div>
+
+      <div class="creatures-grid">
+
+        <!-- LOBSTRAWBERRY CARD START -->
+        <article class="creature-card" data-creature="lobstrawberry">
+          <div class="creature-canvas-wrap">
+            <canvas class="creature-canvas" id="canvas-lobstrawberry"></canvas>
+          </div>
+          <div class="creature-info">
+            <h3>Lobstrawberry</h3>
+            <p>The crown jewel of Sea Fruits. A deep-crimson crustacean with the scent of ripe June strawberries and the sweetness of shellfish at its finest. Its claws contain a natural berry brine.</p>
+            <a href="menu.html#lobstrawberry" class="creature-link">See on Menu →</a>
+          </div>
+        </article>
+        <!-- LOBSTRAWBERRY CARD END -->
+
+        <!-- TUNANA CARD START -->
+        <article class="creature-card" data-creature="tunana">
+          <div class="creature-canvas-wrap">
+            <canvas class="creature-canvas" id="canvas-tunana"></canvas>
+          </div>
+          <div class="creature-info">
+            <h3>Tunana</h3>
+            <p>A sleek, golden-fleshed fish with the creamy density of a ripe banana and the clean salinity of bluefin tuna. Its flesh flakes into ribbons of amber and ivory — extraordinary sashimi.</p>
+            <a href="menu.html#tunana" class="creature-link">See on Menu →</a>
+          </div>
+        </article>
+        <!-- TUNANA CARD END -->
+
+        <!-- SALMONBERRY CARD START -->
+        <article class="creature-card" data-creature="salmonberry">
+          <div class="creature-canvas-wrap">
+            <canvas class="creature-canvas" id="canvas-salmonberry"></canvas>
+          </div>
+          <div class="creature-info">
+            <h3>Salmberry</h3>
+            <p>A rosy, round-bodied swimmer whose scales shimmer like polished raspberries. Its omega-rich flesh carries a perfume of late-summer stone fruit with the unmistakable depth of Atlantic salmon.</p>
+            <a href="menu.html#salmberry" class="creature-link">See on Menu →</a>
+          </div>
+        </article>
+        <!-- SALMONBERRY CARD END -->
+
+      </div>
+    </section>
+    <!-- CREATURES SECTION END -->
+
+    <!-- MENU PREVIEW SECTION START -->
+    <section class="menu-preview" aria-label="Menu preview">
+      <div class="section-header centered">
+        <p class="section-eyebrow">A Taste of What Awaits</p>
+        <h2>Tonight's Highlights</h2>
+      </div>
+      <div class="menu-preview-grid">
+        <div class="menu-preview-item">
+          <span class="item-name">Lobstrawberry Bisque</span>
+          <span class="leader"></span>
+          <span class="item-price">$24</span>
+        </div>
+        <div class="menu-preview-item">
+          <span class="item-name">Tunana Sashimi, Black Sesame</span>
+          <span class="leader"></span>
+          <span class="item-price">$32</span>
+        </div>
+        <div class="menu-preview-item">
+          <span class="item-name">Salmberry Crudo, Citrus Oil</span>
+          <span class="leader"></span>
+          <span class="item-price">$28</span>
+        </div>
+        <div class="menu-preview-item">
+          <span class="item-name">Whole Roasted Lobstrawberry</span>
+          <span class="leader"></span>
+          <span class="item-price">$68</span>
+        </div>
+      </div>
+      <div class="menu-preview-cta">
+        <a href="menu.html" class="btn btn-primary">Full Menu</a>
+      </div>
+    </section>
+    <!-- MENU PREVIEW SECTION END -->
+
+    <!-- PHILOSOPHY SECTION START -->
+    <section class="philosophy" aria-label="Our philosophy">
+      <div class="philosophy-inner">
+        <div class="philosophy-text">
+          <p class="section-eyebrow">The Philosophy</p>
+          <h2>Nature Had More Imagination Than We Gave It Credit For</h2>
+          <p>At Sea Fruits, we work with a small network of tidal orchards — coastal plots where the boundary between the sea floor and fertile earth has blurred over millennia. The creatures that emerge from these liminal waters are unlike anything found in a conventional fish market.</p>
+          <p>Our chefs treat each hybrid with the reverence of a wild ingredient: minimal intervention, maximal respect for what the sea — and the tree — intended.</p>
+          <a href="visit.html" class="btn btn-outline">Find Us</a>
+        </div>
+        <div class="philosophy-visual" aria-hidden="true">
+          <canvas id="philosophy-canvas"></canvas>
+        </div>
+      </div>
+    </section>
+    <!-- PHILOSOPHY SECTION END -->
+
+  </main>
+
+  <!-- FOOTER START -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Sea Fruits</p>
+        <p class="footer-tagline-small">Where Ocean Meets Orchard</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="visit.html">Visit</a>
+      </nav>
+      <div class="footer-contact">
+        <p>12 Tidal Orchard Lane, Coastal Bay</p>
+        <p>reservations@seafruits.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Sea Fruits. All rights reserved.</p>
+      <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

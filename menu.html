@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Sea Fruits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV START -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Sea Fruits</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active">Menu</a></li>
+        <li><a href="visit.html" class="nav-link">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- HEADER / NAV END -->
+
+  <main>
+
+    <!-- MENU PAGE HERO START -->
+    <section class="page-hero menu-page-hero" aria-label="Menu hero">
+      <canvas id="menu-hero-canvas"></canvas>
+      <div class="page-hero-content">
+        <p class="section-eyebrow">Seasonal · Market-driven · Impossible</p>
+        <h1>The Menu</h1>
+        <p>Each dish is composed around a single hybrid specimen, prepared with techniques that honour both its aquatic and botanical nature.</p>
+      </div>
+    </section>
+    <!-- MENU PAGE HERO END -->
+
+    <!-- MENU BODY START -->
+    <div class="menu-body">
+
+      <!-- STARTERS SECTION START -->
+      <section class="menu-section" aria-labelledby="starters-heading">
+        <div class="menu-section-header">
+          <h2 id="starters-heading">First of the Sea &amp; Vine</h2>
+          <p class="menu-section-sub">Small plates to open the palate</p>
+        </div>
+
+        <article class="menu-item" id="lobstrawberry">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Lobstrawberry Bisque</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$24</span>
+          </div>
+          <p class="menu-item-desc">Slow-simmered shell stock reduced with roasted Lobstrawberry claw meat, finished with a float of strawberry cream and micro chervil. The bisque carries the tidal salinity of the claw alongside a gentle berry sweetness that blooms only at the end.</p>
+          <p class="menu-item-tags"><span class="tag">Signature</span><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item" id="tunana">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Tunana Sashimi, Black Sesame &amp; Yuzu</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$32</span>
+          </div>
+          <p class="menu-item-desc">Hand-cut Tunana loin, aged for twelve hours, served across a smear of black sesame paste. A yuzu and banana-blossom vinaigrette provides acid brightness without masking the fish's innate creaminess. Four pieces, each a study in restraint.</p>
+          <p class="menu-item-tags"><span class="tag">Signature</span><span class="tag">Raw</span><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item" id="salmberry">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Salmberry Crudo, Citrus Oil &amp; Sea Salt</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$28</span>
+          </div>
+          <p class="menu-item-desc">Paper-thin Salmberry slices cured for twenty minutes in lemon zest and fleur de sel, dressed with cold-pressed citrus oil and a dot of fermented raspberry. Topped with a single edible flower from our tidal orchard.</p>
+          <p class="menu-item-tags"><span class="tag">Raw</span><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item" id="perchimmon">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Perchimmon Tartare</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$26</span>
+          </div>
+          <p class="menu-item-desc">Finely diced Perchimmon — a subtle river perch fused with the autumnal richness of ripe persimmon — mixed with shallot, capers, and a touch of aged sherry vinegar. Served with house-made rye crisps and a quail egg yolk.</p>
+          <p class="menu-item-tags"><span class="tag">Raw</span></p>
+        </article>
+
+        <article class="menu-item" id="seabbage">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Seabbage Salad, Fermented Shellfish &amp; Dill</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$22</span>
+          </div>
+          <p class="menu-item-desc">Shredded Seabbage — a uni-kissed sea cabbage with the crunch of crucifer and the umami depth of sea urchin — dressed in a light vinaigrette with fermented cockle broth, crispy breadcrumbs, and fresh dill. A study in green and white, mineral and bright.</p>
+          <p class="menu-item-tags"><span class="tag">Vegetarian</span><span class="tag">Contains shellfish</span></p>
+        </article>
+      </section>
+      <!-- STARTERS SECTION END -->
+
+      <!-- MAINS SECTION START -->
+      <section class="menu-section" aria-labelledby="mains-heading">
+        <div class="menu-section-header">
+          <h2 id="mains-heading">From the Deep Orchard</h2>
+          <p class="menu-section-sub">Principal courses, composed to satisfy</p>
+        </div>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Whole Roasted Lobstrawberry</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$68</span>
+          </div>
+          <p class="menu-item-desc">A full Lobstrawberry, split and roasted over charcoal, basted in cultured butter and berry reduction every four minutes. Accompanied by charred spring onion, a small pot of drawn strawberry butter, and heirloom potato gratin. The defining dish of Sea Fruits.</p>
+          <p class="menu-item-tags"><span class="tag">Chef's Choice</span><span class="tag">Signature</span><span class="tag">For two</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Tunana Collar, Miso &amp; Plantain</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$48</span>
+          </div>
+          <p class="menu-item-desc">The prized collar of a mature Tunana — the richest cut — lacquered in white miso and twice-cooked under the grill. Served beside caramelised plantain, a bonito-banana dashi, and wilted sea purslane. Complex, generous, irreplaceable.</p>
+          <p class="menu-item-tags"><span class="tag">Signature</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Salmberry en Papillote, Fennel &amp; Grape</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$44</span>
+          </div>
+          <p class="menu-item-desc">A whole side of Salmberry sealed in parchment with shaved fennel, halved Concord grapes, white wine, and cold butter. Steamed in its own fragrant cloud, opened tableside. The steam alone is part of the experience.</p>
+          <p class="menu-item-tags"><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item" id="codrange">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Codrange Stew, Saffron &amp; Clementine</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$42</span>
+          </div>
+          <p class="menu-item-desc">Chunked Codrange — a flaky white fish with the faint citrus perfume of blood orange — simmered in a saffron-clementine broth with white beans, smoked paprika, and toasted sourdough rubbed with garlic. A dish of honest depth and quiet surprise.</p>
+          <p class="menu-item-tags"><span class="tag">Contains gluten</span></p>
+        </article>
+
+        <article class="menu-item" id="prawnapple">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Prawnapple, Burnt Butter &amp; Black Garlic</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$46</span>
+          </div>
+          <p class="menu-item-desc">A large Prawnapple — sweet pink prawn fused with the tropical brightness of pineapple — pan-seared until caramelised, finished in brown butter with black garlic, toasted coconut, and a squeeze of lime. Accompanied by cauliflower purée and micro coriander.</p>
+          <p class="menu-item-tags"><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item" id="musselonberry">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Musselonberry Braise, White Wine &amp; Thyme</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$38</span>
+          </div>
+          <p class="menu-item-desc">A pot of Musselonberry — the bivalve sweetness of mussel married with the honeyed stone-fruit notes of melon — steamed in white wine with shallot, fresh thyme, and a whisper of saffron. Served with crusty bread for soaking the fragrant broth. A humble classic reborn.</p>
+          <p class="menu-item-tags"><span class="tag">Contains shellfish</span><span class="tag">Contains gluten</span></p>
+        </article>
+      </section>
+      <!-- MAINS SECTION END -->
+
+      <!-- DESSERTS SECTION START -->
+      <section class="menu-section" aria-labelledby="desserts-heading">
+        <div class="menu-section-header">
+          <h2 id="desserts-heading">Sweet Tides</h2>
+          <p class="menu-section-sub">Desserts that close the loop between sea and sweetness</p>
+        </div>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Lobstrawberry Shell Brûlée</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$16</span>
+          </div>
+          <p class="menu-item-desc">Classic crème brûlée infused with the natural brine-berry juices extracted from a Lobstrawberry shell, served inside a cleaned half-shell. The burnt sugar crust cracks to reveal a custard that tastes unmistakably of summer shoreline.</p>
+          <p class="menu-item-tags"><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Tunana Mousse, Banana Caramel</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$14</span>
+          </div>
+          <p class="menu-item-desc">A light, airy mousse made from the naturally sweet oils of the Tunana, set with agar and folded with whipped cream. Pooled in slow-cooked banana caramel, topped with a fragment of chocolate coral. Surprisingly easy to love.</p>
+          <p class="menu-item-tags"><span class="tag">Gluten-free</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Seaberry Pavlova, Coral Dust &amp; Sea Salt Cream</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$15</span>
+          </div>
+          <p class="menu-item-desc">Crisp meringue shell filled with whipped cream infused with sea-salt caramel. Topped with fresh seaberries and a dusting of edible coral salt. Tart, sweet, and briny all at once — a dessert that acknowledges the tidal orchard.</p>
+          <p class="menu-item-tags"><span class="tag">Gluten-free</span><span class="tag">Vegetarian</span></p>
+        </article>
+      </section>
+      <!-- DESSERTS SECTION END -->
+
+      <!-- DRINKS SECTION START -->
+      <section class="menu-section" aria-labelledby="drinks-heading">
+        <div class="menu-section-header">
+          <h2 id="drinks-heading">Liquid Garden</h2>
+          <p class="menu-section-sub">Pairings from the cellar and the tide pool</p>
+        </div>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Tidal Orchard Spritz</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$18</span>
+          </div>
+          <p class="menu-item-desc">House-pressed sea-apple juice, dry vermouth, a splash of seaweed bitters, and cold sparkling water. Herbaceous, saline, faintly floral. The aperitif of Sea Fruits.</p>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-item-header">
+            <h3 class="menu-item-name">Natural Wine Pairing, Five Courses</h3>
+            <span class="menu-item-leader"></span>
+            <span class="menu-item-price">$85</span>
+          </div>
+          <p class="menu-item-desc">Selected by our sommelier from small producers working in coastal and island terroirs — wines with a saline edge that complements the hybrids on the plate. Pours sized for each course.</p>
+        </article>
+      </section>
+      <!-- DRINKS SECTION END -->
+
+    </div>
+    <!-- MENU BODY END -->
+
+    <!-- MENU NOTE SECTION START -->
+    <section class="menu-note" aria-label="Menu note">
+      <p>All creatures are sourced from certified tidal orchards and harvested humanely. Menu changes seasonally. Please inform us of any allergies when making your reservation. A 20% service charge is added to tables of six or more.</p>
+    </section>
+    <!-- MENU NOTE SECTION END -->
+
+  </main>
+
+  <!-- FOOTER START -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Sea Fruits</p>
+        <p class="footer-tagline-small">Where Ocean Meets Orchard</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="visit.html">Visit</a>
+      </nav>
+      <div class="footer-contact">
+        <p>12 Tidal Orchard Lane, Coastal Bay</p>
+        <p>reservations@seafruits.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Sea Fruits. All rights reserved.</p>
+      <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
